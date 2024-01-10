@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML5 Boilerplate</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            width: 100vw;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        img
+        {
+            width: 100%;
+            height: 100%;
+            background: wheat;
+        }
+    </style>
+</head>
+
+<body>
+
+<img id="VideoPlayer">
+
+<script>
+        document.addEventListener('DOMContentLoaded', async function() {
+        // your code here
+            let img = document.querySelector("#VideoPlayer");
+
+            let response = await fetch("http://localhost:9000/Movie/");
+            let data = await response.text();
+            img.src = data;
+
+        }, false);
+    </script>
+</body>
+
+</html>

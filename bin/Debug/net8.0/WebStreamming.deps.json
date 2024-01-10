@@ -1,0 +1,169 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WebStreamming/1.0.0": {
+        "dependencies": {
+          "Microsoft.DotNet.ILCompiler": "8.0.0",
+          "Microsoft.NET.ILLink.Tasks": "8.0.0",
+          "Watson": "6.1.5"
+        },
+        "runtime": {
+          "WebStreamming.dll": {}
+        }
+      },
+      "IpMatcher/1.0.4.4": {
+        "runtime": {
+          "lib/net6.0/IpMatcher.dll": {
+            "assemblyVersion": "1.0.4.4",
+            "fileVersion": "1.0.4.4"
+          }
+        }
+      },
+      "Microsoft.DotNet.ILCompiler/8.0.0": {},
+      "Microsoft.NET.ILLink.Tasks/8.0.0": {},
+      "RegexMatcher/1.0.8": {
+        "runtime": {
+          "lib/net7.0/RegexMatcher.dll": {
+            "assemblyVersion": "1.0.8.0",
+            "fileVersion": "1.0.8.0"
+          }
+        }
+      },
+      "System.Text.Encodings.Web/8.0.0": {},
+      "System.Text.Json/8.0.0": {
+        "dependencies": {
+          "System.Text.Encodings.Web": "8.0.0"
+        }
+      },
+      "Timestamps/1.0.6": {
+        "runtime": {
+          "lib/net8.0/Timestamps.dll": {
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
+          }
+        }
+      },
+      "UrlMatcher/2.0.1": {
+        "runtime": {
+          "lib/net7.0/UrlMatcher.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "Watson/6.1.5": {
+        "dependencies": {
+          "IpMatcher": "1.0.4.4",
+          "RegexMatcher": "1.0.8",
+          "System.Text.Json": "8.0.0",
+          "Timestamps": "1.0.6",
+          "UrlMatcher": "2.0.1",
+          "Watson.Core": "6.1.5"
+        },
+        "runtime": {
+          "lib/net8.0/WatsonWebserver.dll": {
+            "assemblyVersion": "6.1.5.0",
+            "fileVersion": "6.1.5.0"
+          }
+        }
+      },
+      "Watson.Core/6.1.5": {
+        "dependencies": {
+          "IpMatcher": "1.0.4.4",
+          "RegexMatcher": "1.0.8",
+          "System.Text.Json": "8.0.0",
+          "Timestamps": "1.0.6",
+          "UrlMatcher": "2.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/WatsonWebserver.Core.dll": {
+            "assemblyVersion": "6.1.5.0",
+            "fileVersion": "6.1.5.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebStreamming/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IpMatcher/1.0.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-93zP6KaDdRttUI3fFet6mYQGed1gTVK2amIOxpq4tDl3NRY+2tP/iA30hvRrs+ZY8u8KGF/J7kX6l7jrhKHfZA==",
+      "path": "ipmatcher/1.0.4.4",
+      "hashPath": "ipmatcher.1.0.4.4.nupkg.sha512"
+    },
+    "Microsoft.DotNet.ILCompiler/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zuTbpcWDCCvESnOAvpHuwum1C3jJIeDl+grYcRDqyoHsPAUutIB6wb7iJV3Y2Q96crKC6cObqf92eOVEiG7keQ==",
+      "path": "microsoft.dotnet.ilcompiler/8.0.0",
+      "hashPath": "microsoft.dotnet.ilcompiler.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B3etT5XQ2nlWkZGO2m/ytDYrOmSsQG1XNBaM6ZYlX5Ch/tDrMFadr0/mK6gjZwaQc55g+5+WZMw4Cz3m8VEF7g==",
+      "path": "microsoft.net.illink.tasks/8.0.0",
+      "hashPath": "microsoft.net.illink.tasks.8.0.0.nupkg.sha512"
+    },
+    "RegexMatcher/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h3wa6sKJnyojCH2wJpvHdQRGWn+eKiSYGKPInIzvdl+SaKhUN9Qpr0CK4A3aqrYFBTEJKFN7pzYlNR4S5gZnaw==",
+      "path": "regexmatcher/1.0.8",
+      "hashPath": "regexmatcher.1.0.8.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yev/k9GHAEGx2Rg3/tU6MQh4HGBXJs70y7j1LaM1i/ER9po+6nnQ6RRqTJn1E7Xu0fbIFK80Nh5EoODxrbxwBQ==",
+      "path": "system.text.encodings.web/8.0.0",
+      "hashPath": "system.text.encodings.web.8.0.0.nupkg.sha512"
+    },
+    "System.Text.Json/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OdrZO2WjkiEG6ajEFRABTRCi/wuXQPxeV6g8xvUJqdxMvvuCCEk86zPla8UiIQJz3durtUEbNyY/3lIhS0yZvQ==",
+      "path": "system.text.json/8.0.0",
+      "hashPath": "system.text.json.8.0.0.nupkg.sha512"
+    },
+    "Timestamps/1.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n/8G1b7gCqkOhW2xUVPY3jqVYdLckk0/StngS8GwOHbgEmDOpSVDRjxPELS/Hda2W+lMPY37+RWXCbKhDWnzHg==",
+      "path": "timestamps/1.0.6",
+      "hashPath": "timestamps.1.0.6.nupkg.sha512"
+    },
+    "UrlMatcher/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oXdRZowgfZlK5u/IxeeqN8ERnc9wOiAMeW6sqptdXsoNeVTRHVQOy5LNXADSFDn1MrkAh9Z1VQ9ET2puFrJBHg==",
+      "path": "urlmatcher/2.0.1",
+      "hashPath": "urlmatcher.2.0.1.nupkg.sha512"
+    },
+    "Watson/6.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HqLb2hYS7fz2mpUyAlPbmviaS+JsVcNE+7UEdYazrPwg1t5BvN1EAv1j5DD74i9zO69oR/4nc24E87JNCMbg0w==",
+      "path": "watson/6.1.5",
+      "hashPath": "watson.6.1.5.nupkg.sha512"
+    },
+    "Watson.Core/6.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+YabpymgCo1kzBopGqgs88GUwsFLYTU1ibHGLCFxmROnd6exkZKvBnhW+84u3gzYvXmkqb4nwR4SEiw6XpnaSA==",
+      "path": "watson.core/6.1.5",
+      "hashPath": "watson.core.6.1.5.nupkg.sha512"
+    }
+  }
+}
