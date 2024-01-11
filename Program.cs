@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Text.RegularExpressions;
 using WatsonWebserver;
 using WatsonWebserver.Core;
 using HttpMethod = WatsonWebserver.Core.HttpMethod;
@@ -14,9 +15,7 @@ class Program
     {
         Webserver server = new Webserver(new WebserverSettings("localhost", 9000, false), DefaultRoute);
 
-        // add static routes
-        server.Routes.PreAuthentication.Static.Add(HttpMethod.GET, "/Movie/", StreammingContent);
-
+        server.Routes.PreAuthentication.Static.Add(HttpMethod.GET, "/Movie", StreammingContent);
         // start the server
         server.Start();
 
@@ -28,5 +27,5 @@ class Program
 
     static async Task DefaultRoute(HttpContextBase ctx) => await ctx.Response.Send("Hello from the default route!");
 
-    static async Task StreammingContent(HttpContextBase ctx) => await ctx.Response.Send(HttpScript.GetMovieScreen());
+    static async Task StreammingContent(HttpContextBase ctx) => await ctx.Response.Send(HttpScript.GetMovieScreenShot(ctx.Request.Url.Full));
 }

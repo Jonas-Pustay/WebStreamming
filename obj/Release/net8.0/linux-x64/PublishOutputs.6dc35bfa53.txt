@@ -1,0 +1,2 @@
+/home/jonasp/Documents/Visual Studio Code/WebStreamming/bin/Release/net8.0/linux-x64/publish/WebStreamming
+/home/jonasp/Documents/Visual Studio Code/WebStreamming/bin/Release/net8.0/linux-x64/publish/WebStreamming.pdb

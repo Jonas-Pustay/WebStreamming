@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HLEQ5JWUiWGCrXkB/CdL9FWM5+6VAm9ql7R2bchdREvYmiq0PtMtod3QKZo4LvZF7K4KcSAXvJzr2vgPbjtTRA==",
+  "dgSpecHash": "PnZYWdqXkQLkN/2A3QEr0J8UWXMgZb3IfYSvkMA9Rx8nvUACyGoaZ8A4sA5vJ/FEJHAziJaF/kV/Gfy3sH7EcQ==",
   "success": true,
   "projectFilePath": "/home/jonasp/Documents/Visual Studio Code/WebStreamming/WebStreamming.csproj",
   "expectedPackageFiles": [
@@ -8,12 +8,15 @@
     "/home/jonasp/.nuget/packages/microsoft.dotnet.ilcompiler/8.0.0/microsoft.dotnet.ilcompiler.8.0.0.nupkg.sha512",
     "/home/jonasp/.nuget/packages/microsoft.net.illink.tasks/8.0.0/microsoft.net.illink.tasks.8.0.0.nupkg.sha512",
     "/home/jonasp/.nuget/packages/regexmatcher/1.0.8/regexmatcher.1.0.8.nupkg.sha512",
+    "/home/jonasp/.nuget/packages/runtime.linux-x64.microsoft.dotnet.ilcompiler/8.0.0/runtime.linux-x64.microsoft.dotnet.ilcompiler.8.0.0.nupkg.sha512",
     "/home/jonasp/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/home/jonasp/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
     "/home/jonasp/.nuget/packages/timestamps/1.0.6/timestamps.1.0.6.nupkg.sha512",
     "/home/jonasp/.nuget/packages/urlmatcher/2.0.1/urlmatcher.2.0.1.nupkg.sha512",
     "/home/jonasp/.nuget/packages/watson/6.1.5/watson.6.1.5.nupkg.sha512",
     "/home/jonasp/.nuget/packages/watson.core/6.1.5/watson.core.6.1.5.nupkg.sha512",
+    "/home/jonasp/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/8.0.0/microsoft.netcore.app.runtime.linux-x64.8.0.0.nupkg.sha512",
+    "/home/jonasp/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/8.0.0/microsoft.aspnetcore.app.runtime.linux-x64.8.0.0.nupkg.sha512",
     "/home/jonasp/.nuget/packages/runtime.linux-x64.microsoft.dotnet.ilcompiler/8.0.0/runtime.linux-x64.microsoft.dotnet.ilcompiler.8.0.0.nupkg.sha512"
   ],
   "logs": []
