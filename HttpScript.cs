@@ -29,15 +29,25 @@ public class HttpScript
         sw.Restart();
         NameValueCollection UrlParameter = HttpUtility.ParseQueryString(new Uri(Url).Query);
 
-        Program.ffmpeg.StartInfo.Arguments = "-loglevel quiet -skip_frame nokey -ss " + UrlParameter["duration"] + " -i Movie/" + UrlParameter["name"] + "/" + UrlParameter["episode"] + ".avi -r 1 -c:v libwebp -vframes 1 -f image2 -lossless 0 -compression_level 0 -q:v " + UrlParameter["quality"] + " -cr_threshold 0 -preset none -cr_size 16 Streamming.webp -y";
+        Program.ffmpeg.StartInfo.Arguments = "-loglevel quiet -ss " + UrlParameter["duration"] + " -i Movie/" + UrlParameter["name"] + "/" + UrlParameter["episode"] + ".mp4 -r 1 -f image2 -quality " + UrlParameter["quality"] + " -frames:v 1 Streamming.jpg -y";
         Program.ffmpeg.Start();
         Program.ffmpeg.StandardInput.Flush();
         Program.ffmpeg.StandardInput.Close();
         Program.ffmpeg.WaitForExit();
 
         sw.Stop();
-        Console.WriteLine("Extract image: " + sw.ElapsedMilliseconds + "ms - " + UrlParameter["name"]);
+        Console.WriteLine("Test2: " + sw.ElapsedMilliseconds + "ms");
 
-        return "data:image/webp;base64," + Convert.ToBase64String(File.ReadAllBytesAsync(Directory.GetCurrentDirectory() + "/Streamming.webp").Result);
+        return "data:image/jpg;base64," + Convert.ToBase64String(File.ReadAllBytes(Directory.GetCurrentDirectory() + "/Streamming.jpg"));
+    }
+
+    public static string ToBase64String(string fileName)
+    {   
+    	using (FileStream reader = new FileStream(fileName, FileMode.Open))
+    	{
+    		byte[] buffer = new byte[reader.Length];
+    		reader.Read(buffer, 0, (int)reader.Length);
+    		return Convert.ToBase64String(buffer);
+    	}
     }
 }

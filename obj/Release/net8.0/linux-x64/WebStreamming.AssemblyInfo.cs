@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebStreamming")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06cb21da621523ac3bbd34b54493287ee3177132")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d36d6e6972b0e32d949cab05eb0d7611bdb28f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebStreamming")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebStreamming")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
